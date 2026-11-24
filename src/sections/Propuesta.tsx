@@ -2,6 +2,7 @@ import { ArrowRight, BookOpen, Check, Laptop, Monitor, Network, School, Users } 
 import { Reveal } from '../components/ui/Reveal'
 import { SectionHeading } from '../components/ui/SectionHeading'
 import { EduTrackMark } from '../components/logos/EduTrackLogo'
+import { imagen } from '../data/images'
 import { objetivosEspecificos } from '../data/project'
 
 const infraestructura = [
@@ -43,7 +44,7 @@ export function Propuesta() {
             <article className="tarjeta h-full overflow-hidden">
               <div className="relative h-52 overflow-hidden sm:h-60">
                 <img
-                  src="/images/aula-digital.jpg"
+                  src={imagen('aula-digital.jpg')}
                   alt="Estudiante utilizando una computadora portátil como representación del aula digital"
                   className="h-full w-full object-cover"
                   width="1400"

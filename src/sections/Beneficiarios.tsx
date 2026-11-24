@@ -1,12 +1,13 @@
 import { Info } from 'lucide-react'
+import { imagen } from '../data/images'
 import { beneficiarios } from '../data/project'
 import { Reveal } from '../components/ui/Reveal'
 import { SectionHeading } from '../components/ui/SectionHeading'
 
 const imagenes = [
-  '/images/estudiantes-trabajando.jpg',
-  '/images/docente-tecnologia.jpg',
-  '/images/espacio-academico.jpg',
+  imagen('estudiantes-trabajando.jpg'),
+  imagen('docente-tecnologia.jpg'),
+  imagen('espacio-academico.jpg'),
 ]
 
 const altTextos = [

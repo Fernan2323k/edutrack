@@ -1,4 +1,5 @@
 import { CalendarDays, Landmark, Mail, MapPin, Phone, ShieldAlert, UsersRound } from 'lucide-react'
+import { imagen } from '../data/images'
 import { avisoAcademicoITEU, consejoDirectivo, organizacion } from '../data/organization'
 import { Reveal } from '../components/ui/Reveal'
 import { SectionHeading } from '../components/ui/SectionHeading'
@@ -36,7 +37,7 @@ export function Organizacion() {
             <div className="h-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-tarjeta">
               <div className="relative h-44 overflow-hidden sm:h-52">
                 <img
-                  src="/images/campus-universitario.jpg"
+                  src={imagen('campus-universitario.jpg')}
                   alt="Edificio universitario como representación del entorno de educación superior"
                   className="h-full w-full object-cover"
                   width="1400"

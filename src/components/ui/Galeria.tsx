@@ -1,10 +1,11 @@
+import { imagen } from '../../data/images'
 import { Reveal } from './Reveal'
 
 const imagenes = [
-  { src: '/images/hero-laboratorio.jpg', alt: 'Equipo trabajando con computadoras en un espacio colaborativo', titulo: 'Trabajo colaborativo' },
-  { src: '/images/aula-clases.jpg', alt: 'Aula preparada para actividades académicas', titulo: 'Espacios académicos' },
-  { src: '/images/docente-tecnologia.jpg', alt: 'Docente usando herramientas tecnológicas', titulo: 'Apoyo docente' },
-  { src: '/images/espacio-academico.jpg', alt: 'Espacio de estudio con recursos académicos', titulo: 'Recursos de estudio' },
+  { src: imagen('hero-laboratorio.jpg'), alt: 'Equipo trabajando con computadoras en un espacio colaborativo', titulo: 'Trabajo colaborativo' },
+  { src: imagen('aula-clases.jpg'), alt: 'Aula preparada para actividades académicas', titulo: 'Espacios académicos' },
+  { src: imagen('docente-tecnologia.jpg'), alt: 'Docente usando herramientas tecnológicas', titulo: 'Apoyo docente' },
+  { src: imagen('espacio-academico.jpg'), alt: 'Espacio de estudio con recursos académicos', titulo: 'Recursos de estudio' },
 ]
 
 /** Galería de imágenes representativas del entorno académico propuesto. */

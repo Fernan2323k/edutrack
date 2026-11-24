@@ -1,4 +1,5 @@
 import { ArrowRight, Building2, FileText, GraduationCap, Layers3, MapPin } from 'lucide-react'
+import { imagen } from '../data/images'
 import { Reveal } from '../components/ui/Reveal'
 import { ITEUMark } from '../components/logos/EduTrackLogo'
 
@@ -95,7 +96,7 @@ export function Hero() {
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-tecnologico/40 via-transparent to-cian/30 blur-2xl" aria-hidden="true" />
             <div className="relative overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/5 shadow-2xl shadow-black/40">
               <img
-                src="/images/hero-laboratorio.jpg"
+                src={imagen('hero-laboratorio.jpg')}
                 alt="Equipo académico trabajando con computadoras portátiles en un espacio universitario"
                 className="h-[300px] w-full object-cover sm:h-[420px] lg:h-[500px]"
                 width="1400"

@@ -330,7 +330,7 @@ export function EduTrackDemo() {
   const [vista, setVista] = useState<Vista>('estudiante')
 
   return (
-    <section id="edutrack" className="seccion bg-white">
+    <section id="edutrack" className="seccion relative overflow-hidden bg-white">
       <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-niebla to-white" aria-hidden="true" />
       <div className="contenedor relative">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">

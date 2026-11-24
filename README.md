@@ -87,20 +87,20 @@ Los lugares sin información documentada se marcan como **"Por definir"**, **"Pr
 
 ## Despliegue en GitHub Pages
 
-El sitio se publica automáticamente con GitHub Actions cada vez que se hace `push` a `main`.
+El sitio se publica desde la rama `gh-pages` con el paquete `gh-pages`.
 
 - Repositorio: https://github.com/Fernan2323k/edutrack
 - URL pública: https://fernan2323k.github.io/edutrack/
 - Configuración: `vite.config.ts` usa `base: '/edutrack/'` para que los recursos carguen correctamente en la ruta del proyecto.
-- Flujo de trabajo: `.github/workflows/deploy.yml` compila con `npm ci` y `npm run build`, y publica `dist/` mediante `actions/deploy-pages@v4`.
+- Fuente de Pages: rama `gh-pages`, carpeta `/ (root)`.
 
-Para volver a compilar antes de subir:
+Para actualizar el sitio publicado:
 
 ```bash
-npm run build
+npm run deploy
 ```
 
-Luego:
+Ese comando compila el proyecto y empuja `dist/` a la rama `gh-pages`. Los cambios en el código fuente también deben subirse a `main`:
 
 ```bash
 git add .
